@@ -11,6 +11,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  /* my own custom */
+  --theme-color: #f44336;
+  --theme-dark-color: #b71c1c;
+  /* original */
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -159,12 +163,12 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: var(--theme-color);
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #824027;
+  color: var(--theme-dark-color);
   text-decoration: underline;
 }
 
@@ -6075,7 +6079,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #ff5252 !important;
+  background-color: var(--theme-color) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9777,11 +9781,11 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #bd5d38 !important;
+  color: var(--theme-color) !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #824027 !important;
+  color: var(--theme-dark-color) !important;
 }
 
 .text-secondary {
@@ -10069,7 +10073,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: var(--gray-dark);
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -10079,7 +10083,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: var(--theme-color);
 }
 
 .dev-icons {
